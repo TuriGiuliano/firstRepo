@@ -1,3 +1,4 @@
 <?php
-    echo "hello, git Ohh";
+    require_once __DIR__ . '/functions.php';
+    getControllerUrl($query)
 ?>
