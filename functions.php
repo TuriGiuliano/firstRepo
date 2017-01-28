@@ -1,6 +1,5 @@
 <?php
 
-
     // Разбивает URL после домена в массив, возвращает его.
 function getQueryUrl(){
     $queryUrl = mb_substr($_SERVER['REQUEST_URI'], 1);
@@ -15,16 +14,18 @@ function getQueryUrl(){
     // Конец функции
 
     // Возвращает URL требуемого контроллера
-function getControllerUrl($query){
+function getControllerUrl(){
     if ($query = getQueryUrl()) {
         switch ($query[0]) {
             case "news":
-                echo __DIR__ . "/controller/news.php"; break;
+                return __DIR__ . "/controller/news.php"; break;
             case "gallery":
-                echo __DIR__ . "/controller/gallery.php"; break;
-            default: echo "Ошибка 404. Страница не найдена";
+                return __DIR__ . "/controller/gallery.php"; break;
+            case "404":
+                return __DIR__."/controller/404.php";break;
+            default: header('Location:/404/');
         }
     }
-    else echo "Главная страница";
+    else return __DIR__ . "/controller/index.php";
 }
 ?>
