@@ -1,4 +1,5 @@
 <?php
     require_once __DIR__ . '/functions.php';
-    require_once getControllerUrl();
+    $controlName = getControllerUrl();
+    require_once __DIR__ . '/controller/' . $controlName . '.php';
 ?>

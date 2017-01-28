@@ -18,14 +18,14 @@ function getControllerUrl(){
     if ($query = getQueryUrl()) {
         switch ($query[0]) {
             case "news":
-                return __DIR__ . "/controller/news.php"; break;
+                return "news"; break;
             case "gallery":
-                return __DIR__ . "/controller/gallery.php"; break;
+                return "gallery"; break;
             case "404":
-                return __DIR__."/controller/404.php";break;
+                return "404";break;
             default: header('Location:/404/');
         }
     }
-    else return __DIR__ . "/controller/index.php";
+    else return "index";
 }
 ?>
