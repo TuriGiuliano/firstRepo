@@ -28,4 +28,21 @@ function getControllerUrl(){
     }
     else return "index";
 }
+    // Конец функции
+
+    // Подключается к БД, возвращает $mysqli или false.
+function connectDB(){
+     $mysqli = new mysqli(
+        "localhost",
+        "root",
+        "",
+        "firstRepo"
+    );
+    if ($mysqli->connect_errno === 0){
+        return $mysqli;
+    }
+    else return false;
+}
+
+define("ROOT_PATH",$_SERVER['DOCUMENT_ROOT']);
 ?>
