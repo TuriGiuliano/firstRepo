@@ -5,5 +5,6 @@ function connectDB(){
         "root",
         "firstRepo",
         ""
+    return $mysqli;
     );
 }
