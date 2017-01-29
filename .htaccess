@@ -4,4 +4,5 @@ RewriteBase /
 
 DirectoryIndex index.php
 
-RewriteRule ^(.*)$ index.php [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^.* /index.php

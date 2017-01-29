@@ -1,2 +1,4 @@
 <?php
-echo "Ошибка 404. Страница не найдена";
+$title =  "Ошибка 404! Страница не найдена.";
+require_once($_SERVER['DOCUMENT_ROOT'] . "/view/404.php");
+?>
