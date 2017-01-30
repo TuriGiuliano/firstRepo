@@ -8,6 +8,9 @@ function getQueryUrl(){
     }
     else {
         $queryArr = explode('/', $queryUrl);
+        if (end($queryArr) == ""){
+            unset(end($queryArr));
+        }
         return $queryArr;
     }
 }
@@ -18,9 +21,9 @@ function getControllerUrl(){
     if ($query = getQueryUrl()) {
         switch ($query[0]) {
             case "news":
-                return "news"; break;
+                return $query; break;
             case "gallery":
-                return "gallery"; break;
+                return $query; break;
             case "404":
                 return "404";break;
             default: header('Location:/404/');
@@ -33,12 +36,13 @@ function getControllerUrl(){
     // Подключается к БД, возвращает $mysqli или false.
 function connectDB(){
      $mysqli = new mysqli(
-        "localhost",
-        "root",
-        "",
-        "firstRepo"
+        "sql8.freemysqlhosting.net",
+        "sql8156306",
+        "MZVSp2Y3Zf",
+        "sql8156306"
     );
     if ($mysqli->connect_errno === 0){
+        $mysqli->set_charset("utf8");
         return $mysqli;
     }
     else return false;
