@@ -1,4 +1,5 @@
 <?php
-$title =  "Новостная страница";
-require_once($_SERVER['DOCUMENT_ROOT'] . "/view/news.php");
+    $title = "Новости";
+    require_once(ROOT_PATH . "/module/newsHome.php");
+    require_once(ROOT_PATH . "/view/news.php");
 ?>
