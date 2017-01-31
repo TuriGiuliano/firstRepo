@@ -58,7 +58,7 @@
         // Подключается к БД, возвращает название категории.
     function getCategoryName($controllerName) {
         $mysqli = connectDB();
-        $mysqli->query("SELECT `name` FROM `title` WHERE `controller` = ". $controllerName[0]."");
+        $mysqli->query("SELECT `name` FROM `title` WHERE 'controller' = '". $controllerName[0]."'");
         $res = $mysqli->fetch_assoc();
         var_dump($res);die;
         return $res['name'];
