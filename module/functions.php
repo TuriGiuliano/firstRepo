@@ -16,7 +16,7 @@
     }
         // Конец функции
 
-        // ЯДРО. Возвращает ИМЯ Файла требуемого контроллера.
+        // ЯДРО. Возвращает имя Файла требуемого контроллера.
     function getControllerUrl(){
         if ($query = getQueryUrl()) {
             switch ($query[0]) {
@@ -56,10 +56,8 @@
         // Конец функции
 
         // Подключается к БД, возвращает название категории.
-    function getCategoryName($controllerName) {
-        $mysqli = connectDB();
-        $query = "SELECT `name` FROM `titels` WHERE `controller` = '". $controllerName[0]."'";
-        $queryRes = $mysqli->query($query);
+    function getCategoryName($mysqli, $controllerName) {
+        $queryRes = $mysqli->query("SELECT `name` FROM `titels` WHERE `controller` = '". $controllerName[0]."'");
         $res = $queryRes->fetch_assoc();
         return $res['name'];
     }
@@ -67,4 +65,13 @@
 
     define("ROOT_PATH",$_SERVER['DOCUMENT_ROOT']); // Константа корня сайта
 
+        // Реализует блок "Хлебные крошки" или фолс
+    function getBread($mysqli, $controllerName){
+        if ($controllerName[0] != "index") {
+            $bread = array($controllerName[0], getCategoryName($mysqli, $controllerName));
+            return $bread;
+        }
+        else return false;
+    }
+        // Конец функции
 ?>

@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="349c99eb-b976-42c8-9b45-62a70680c1e7" name="Default" comment="" />
+=======
     <list default="true" id="349c99eb-b976-42c8-9b45-62a70680c1e7" name="Default" comment="rename&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/functions.php" afterPath="$PROJECT_DIR$/module/functions.php" />
     </list>
+>>>>>>> e4a8ba37a7d40298c254a459059c7b744acf52c4
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -364,10 +368,18 @@
       <workItem from="1485615090934" duration="11100000" />
       <workItem from="1485636914925" duration="2035000" />
       <workItem from="1485689594360" duration="1985000" />
+<<<<<<< HEAD
+      <workItem from="1485709766274" duration="14761000" />
+=======
       <workItem from="1485709766274" duration="14616000" />
+<<<<<<< HEAD
       <workItem from="1485769635994" duration="17994000" />
       <workItem from="1485858025964" duration="10952000" />
       <workItem from="1485935534338" duration="1592000" />
+=======
+      <workItem from="1485769635994" duration="17894000" />
+>>>>>>> e4a8ba37a7d40298c254a459059c7b744acf52c4
+>>>>>>> 0d22aa5f9412582c08953fbff2525f8d6dc94974
     </task>
     <task id="LOCAL-00001" summary="rename&#10;">
       <created>1485710446862</created>
@@ -380,11 +392,23 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="60274000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="29881000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="false" />
+=======
+    <option name="totallyTimeSpent" value="47630000" />
+>>>>>>> 0d22aa5f9412582c08953fbff2525f8d6dc94974
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
+>>>>>>> e4a8ba37a7d40298c254a459059c7b744acf52c4
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19345239" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
