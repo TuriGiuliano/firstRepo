@@ -58,11 +58,12 @@
         // Подключается к БД, возвращает название категории.
     function getCategoryName($controllerName) {
         $mysqli = connectDB();
-        $mysqli->query("SELECT `name` FROM `title` WHERE 'controller' = '". $controllerName[0]."'");
-        $res = $mysqli->fetch_assoc();
-        var_dump($res);die;
+        $query = "SELECT `name` FROM `titels` WHERE `controller` = '". $controllerName[0]."'";
+        $queryRes = $mysqli->query($query);
+        $res = $queryRes->fetch_assoc();
         return $res['name'];
     }
+        // Конец функции
 
     define("ROOT_PATH",$_SERVER['DOCUMENT_ROOT']); // Константа корня сайта
 
