@@ -24,12 +24,17 @@
                     return $query; break;
                 case "gallery":
                     return $query; break;
+                case "admin":
+                    $query[0] = "admin";
+                    return $query; break;
                 case "404":
                     $query[0] = "404";
-                    return $query ;break;
+                    return $query; break;
                 default:
-                    $query[0] = "404";
-                    return $query ;break;
+                    header('Location: /404/');
+                    break;
+                    /*$query[0] = "404";
+                    return $query; break;*/
             }
         }
         else {
